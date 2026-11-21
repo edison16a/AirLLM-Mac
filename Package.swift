@@ -9,5 +9,10 @@ let package = Package(
             name: "AirLLMMac",
             path: "Sources/AirLLMMac"
         ),
+        .testTarget(
+            name: "AirLLMMacTests",
+            dependencies: ["AirLLMMac"],
+            path: "Tests/AirLLMMacTests"
+        ),
     ]
 )
